@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff0f6" />
+  <title>Ananya ♡ A Little World Made for You</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="floating-decor" aria-hidden="true"><span>♡</span><span>✦</span><span>🧸</span><span>♡</span><span>✧</span><span>🌷</span></div>
+
+  <header class="hero" id="top">
+    <div class="tiny-top">A LITTLE WORLD MADE WITH LOVE</div>
+    <h1>Ananya <span>♡</span></h1>
+    <p class="subtitle">For the little sister who makes ordinary days feel special.</p>
+    <div class="hero-photo-wrap">
+      <div class="photo-orbit orbit-a"></div><div class="photo-orbit orbit-b"></div>
+      <div class="photo-halo"></div>
+      <div class="main-photo-frame">
+        <img src="image/ananya1.jpeg" alt="Ananya's photo" onerror="this.style.display='none'; this.parentElement.classList.add('photo-empty');" />
+        <div class="photo-placeholder"><span>🌷</span><strong>Ananya's photo goes here</strong><small>images/ananya-main.jpg</small></div>
+        <span class="photo-badge badge-left">our favourite human</span>
+        <span class="photo-badge badge-right">♡ always loved</span>
+      </div>
+      <span class="deco deco-teddy">🧸</span><span class="deco deco-sparkle">✦</span><span class="deco deco-flower">✿</span>
+    </div>
+    <a class="scroll-link" href="#letter">A little message for you <span>↓</span></a>
+  </header>
+
+  <main>
+    <section class="section letter-section" id="letter">
+      <div class="section-label">01 — A NOTE FROM YOUR BROTHER</div>
+      <div class="note-card">
+        <div class="note-icon">🧸</div>
+        <h2>Dear Ananya,</h2>
+        <p>Ananya, I hope you always remember that you never have to become like everyone else to be important. I want you to learn new things, follow the dreams that make your eyes light up, and grow into someone who can stand confidently on her own feet. There will be days when things feel difficult, when plans do not work out, or when you start doubting yourself. On those days, please be patient with yourself. You are allowed to make mistakes, change your mind, start again, and ask for help. Be brave enough to speak for yourself, kind enough to care about others, and wise enough to protect your peace. I have many hopes for your future, but none of them matter more than your happiness, your safety, and the person you choose to become. No matter how much you grow or where life takes you, you will always have a big brother who believes in you and wants to see you do well.</p>
+        <div class="note-sign">With love, always <span>♡</span></div>
+      </div>
+    </section>
+
+    <section class="section teddy-section" id="teddy-game">
+      <div class="section-label">02 — A LITTLE TEDDY BREAK</div>
+      <h2>Help Teddy find the hearts! <span>🧸</span></h2>
+      <p class="section-subtitle">Teddy has lost his hearts in the garden. Tap the floating hearts and help him collect them before time runs out!</p>
+      <div class="game-card">
+        <div class="game-stats"><span>💗 Hearts: <b id="score">0</b></span><span>⏳ Time: <b id="timer">25</b>s</span></div>
+        <div class="game-arena" id="arena">
+          <div class="game-start-screen" id="startScreen">
+            <div class="big-teddy">🧸</div>
+            <h3>Ready, Ananya?</h3>
+            <p>Teddy is counting on you!</p>
+            <button class="button button-dark" id="startGame">Let's play ✨</button>
+          </div>
+          <button class="heart" id="heart" type="button" aria-label="Collect a heart">💗</button>
+          <div class="game-finish" id="finishScreen" hidden></div>
+        </div>
+        <div class="game-bottom"><span>Every little effort counts.</span><span>Made for Ananya ♡</span></div>
+      </div>
+    </section>
+
+    <section class="section secret-section" id="secret">
+      <div class="section-label">03 — A LITTLE SECRET</div>
+      <h2>One more memory, just for you <span>🔐</span></h2>
+      <p class="section-subtitle">This photo is waiting behind a little name-lock. Enter your name to reveal it.</p>
+      <div class="lock-card">
+        <div class="lock-icon" id="lockIcon">🔒</div>
+        <h3>Ananya's private photo</h3>
+        <p class="lock-caption">Hint: the name at the top of this page.</p>
+        <form id="unlockForm" class="unlock-form">
+          <label for="password">Enter the password</label>
+          <div class="password-row"><input id="password" type="password" placeholder="Your name..." autocomplete="off" required /><button class="button button-dark" type="submit">Unlock ♡</button></div>
+          <p id="passwordMessage" class="password-message" aria-live="polite"></p>
+        </form>
+        <div class="secret-photo" id="secretPhoto" hidden>
+          <div class="secret-frame">
+            <img src="image/ananya2.jpeg" alt="Ananya's surprise photo" onerror="this.style.display='none'; this.parentElement.classList.add('secret-empty');" />
+            <div class="secret-placeholder"><span>🌙</span><b>Add Ananya's second photo here</b><small>images/ananya-secret.jpg</small></div>
+          </div>
+          <p class="revealed-note">A little memory, wrapped in a lot of love. ♡</p>
+        </div>
+      </div>
+      <p class="privacy-note">Note: This is a fun, front-end name-lock, not strong security. Anyone who can inspect the website files may find the photo.</p>
+    </section>
+
+    <section class="section blessing-section" id="blessing">
+      <div class="blessing-stars">✦ &nbsp; ✧ &nbsp; ✦</div>
+      <div class="section-label">04 — ALWAYS IN YOUR CORNER</div>
+      <h2>A blessing for your journey, Ananya</h2>
+      <p class="blessing-quote">“May you always have the courage to begin, the patience to keep learning, and the wisdom to choose what is right for you. May your heart stay kind without forgetting its own worth. When life feels uncertain, may you find strength within yourself and people who help you feel safe. Dream without fear, work with honesty, and never measure your journey against someone else's. I hope you become not just successful, but peaceful, confident, and proud of the life you build.”</p>
+      <div class="blessing-divider"><span>♡</span></div>
+      <p class="brother-blessing">I may not be able to solve every problem for you, but I will always do my best to listen, guide you when you need advice, celebrate your wins, and remind you of your strength when you forget it. You do not have to face every difficult day alone. Wherever life takes you, you will always have my support, my prayers, and my belief in you.</p>
+      <div class="signature">Your big brother, always <span>♡</span></div>
+      <button class="button button-soft" id="blessingBtn" type="button">Keep this blessing close ✨</button>
+      <p id="blessingMessage" class="blessing-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer><span>ANANYA</span> — a little page, with a lifetime of love ♡</footer>
+  <script src="script.js"></script>
+</body>
+</html>
